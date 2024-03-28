@@ -4,43 +4,62 @@ body {
   line-height: 1;
 }
 
-textarea {
+textarea{
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  height: 100%;
+  width: 100%;
 }
 
-header {
+.jumbotron {
   text-align: center;
   background-color: transparent;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
-  padding: 60px;
 }
 
-.description {
+.alert-success {
+  position: fixed;
+  text-align: center;
+  left: 50%;
+  width: 50%;
+  margin-left: -25%;
+  bottom: -80px;
+}
+
+.container {
+  margin-bottom: 30px;
+}
+
+.description{
   white-space: pre-wrap;
 }
 
-.time-block {
+.col-2, .col-8, .col-sm-1, .col-sm-10 {
+  padding: 0;
+}
+
+.time-block{
   text-align: center;
   border-radius: 15px;
 }
 
 .row {
-  white-space: pre-wrap;
+  /* white-space: pre-wrap; */
   height: 80px;
-  border-top: 1px solid white;
+  border-top: 1px solid white;;
 }
 
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  white-space: pre-wrap;
 }
 
 .past {
@@ -62,11 +81,42 @@ header {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #06AED5;
+  height: 100%;
+  width: 100%;
   color: white;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
-  transition: all 0.3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.alert-animation {
+  animation-name: show-and-hide;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 4.00s;
+}
+
+@media (max-width: 600px) {
+  .row {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+@keyframes show-and-hide {
+  0% {
+    bottom: -80px;
+  }
+  15% {
+    bottom: 0;
+  }
+  85% {
+    bottom: 0;
+  }
+  100% {
+    bottom: -80px;
+  }
 }
