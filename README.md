@@ -10,10 +10,8 @@ This is a simple and efficient work planner application designed to help manage 
 - Allows you to input and save tasks for each hour of the workday.
 - Tasks persist in local storage, so they're still there even if you close the browser or refresh the page.
 
-## Installation
-
-1. Clone the repository or download the code from the repository.
-2. Open the `index.html` file in your web browser.
+## visit
+https://cmolai.github.io/Work-planner-/
 
 ## Usage
 
